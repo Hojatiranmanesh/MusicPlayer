@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
 .song-container{
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Protest Riot', sans-serif;
+
+    img{
+        width: 20%;
+        border-radius: 50%;
+    }
+
+    h2{
+        padding: 3rem 1rem 1rem 1rem;
+        color: rgb(54, 54, 54);
+    }
+
+    h3{
+        font-size: 1rem;
+        color: rgb(54, 54, 54);
+    }
 }

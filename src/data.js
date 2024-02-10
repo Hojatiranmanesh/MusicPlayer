@@ -3,20 +3,20 @@ import { v4 as uuidv4 } from 'uuid';
 function musicData (){
     return [
         {
-            name: "Lost Memories",
-            cover: "https://chillhop.com/wp-content/uploads/2023/07/6f0daa06bb93143d1b7660298eabe1d95b9eb983-1024x1024.jpg",
-            artist: "Bastien Brison",
-            audio: "https://stream.chillhop.com/mp3/65377",
-            color:["#ececf6","#2c304b"],
-            id: uuidv4(),
-            active: true,
-        },
-        {
             name:"Dreams & Reality",
             cover:"https://i.scdn.co/image/ab67616d0000b27323a6292a21a468ba0b6aa054",
             artist: "Transient",
             audio: "https://stream.chillhop.com/mp3/69642",
             color:["#ef9072","#7d273c"],
+            id: uuidv4(),
+            active: true,
+        },
+        {
+            name: "Lost Memories",
+            cover: "https://chillhop.com/wp-content/uploads/2023/07/6f0daa06bb93143d1b7660298eabe1d95b9eb983-1024x1024.jpg",
+            artist: "Bastien Brison",
+            audio: "https://stream.chillhop.com/mp3/65377",
+            color:["#ececf6","#2c304b"],
             id: uuidv4(),
             active: true,
         },
@@ -49,3 +49,5 @@ function musicData (){
         }
     ]
 }
+
+export default musicData;

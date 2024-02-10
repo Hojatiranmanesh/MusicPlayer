@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Protest Guerrilla", sans-serif;
 }
 
 .player {
@@ -45,4 +48,17 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Protest Riot", sans-serif;
+}
+.song-container img {
+  width: 20%;
+  border-radius: 50%;
+}
+.song-container h2 {
+  padding: 3rem 1rem 1rem 1rem;
+  color: rgb(54, 54, 54);
+}
+.song-container h3 {
+  font-size: 1rem;
+  color: rgb(54, 54, 54);
 }/*# sourceMappingURL=App.css.map */
