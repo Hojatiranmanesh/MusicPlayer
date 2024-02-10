@@ -2,4 +2,47 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.player .time-control {
+  width: 50%;
+  display: flex;
+}
+.player .time-control input {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.player .time-control p {
+  padding: 1rem;
+}
+.player .play-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 50%;
+}
+.player .play-control svg {
+  cursor: pointer;
+}
+
+.song-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=App.css.map */
