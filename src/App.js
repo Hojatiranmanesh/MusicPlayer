@@ -2,6 +2,7 @@ import React from "react";
 import "./style/App.css";
 import Songs from "./components/Songs";
 import Player from "./components/Player";
+import data from "./data"
 function App() {
   return (
     <div className="App">
