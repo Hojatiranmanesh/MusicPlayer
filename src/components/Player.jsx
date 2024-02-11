@@ -58,6 +58,7 @@ const Player = ({currentSong, isPlaying, setIsPlaying ,songs,setCurrentSong}) =>
                 setCurrentSong(songs[indexCurrent -1 ]);
             }
         }
+        setIsPlaying(false);
     }
     return(
         <div className="player">
