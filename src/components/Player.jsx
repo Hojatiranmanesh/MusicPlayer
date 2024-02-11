@@ -50,7 +50,7 @@ const Player = ({currentSong, isPlaying, setIsPlaying}) => {
             </div>
             <div className="play-control">
                 <FontAwesomeIcon className="skip-back" icon={faAngleLeft} />
-                <FontAwesomeIcon onClick={handlePlaySong} className="play" icon={faPlay} />
+                <FontAwesomeIcon onClick={handlePlaySong} className="play" icon={isPlaying ? faPause : faPlay} />
                 <FontAwesomeIcon className="skip-forward" icon={faAngleRight} />
             </div>
             <audio onLoadedMetadata={timeUpdateHandle} onTimeUpdate={timeUpdateHandle} ref= {audioRef} src={currentSong.audio}></audio>
