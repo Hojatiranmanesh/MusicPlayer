@@ -9,12 +9,13 @@ const Player = () => {
                 <p>Start time</p>
                 <input type="range"/>
                 <p>End Time</p>
-                <div className="play-control">
-                    <FontAwesomeIcon className="skip-back" icon={faAngleLeft} />
-                    <FontAwesomeIcon className="play" icon={faPlay} />
-                    <FontAwesomeIcon className="skip-forward" icon={faAngleRight} />
-                </div>
             </div>
+            <div className="play-control">
+                <FontAwesomeIcon className="skip-back" icon={faAngleLeft} />
+                <FontAwesomeIcon className="play" icon={faPlay} />
+                <FontAwesomeIcon className="skip-forward" icon={faAngleRight} />
+            </div>
+            
         </div>
     );
 };
