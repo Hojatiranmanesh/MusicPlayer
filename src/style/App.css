@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,15 @@ h1 {
   justify-content: center;
   align-items: center;
   font-family: "Protest Guerrilla", sans-serif;
+  padding: 1rem 0 0 0;
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  color: rgb(255, 94, 0);
 }
 
 .player {
@@ -26,16 +36,16 @@ h1 {
 }
 .player .time-control input {
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .player .time-control p {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .player .play-control {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 50%;
 }
 .player .play-control svg {
@@ -55,10 +65,60 @@ h1 {
   border-radius: 50%;
 }
 .song-container h2 {
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 2.5rem 1rem 1rem 1rem;
   color: rgb(54, 54, 54);
 }
 .song-container h3 {
   font-size: 1rem;
   color: rgb(54, 54, 54);
+}
+
+.Songs-List {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: rgb(228, 226, 226);
+  box-shadow: 2px 2px 50px rgb(24, 24, 24);
+  overflow: scroll;
+  font-family: "Protest Riot", sans-serif;
+}
+.Songs-List h2 {
+  padding: 1vw;
+  text-align: center;
+}
+.Songs-List .song-list-items {
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 1vw;
+  align-items: center;
+}
+.Songs-List .song-list-items img {
+  width: 30%;
+}
+
+.song-item {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5vw;
+  border-bottom: 3px solid gray;
+  cursor: pointer;
+}
+.song-item:hover {
+  background: grey;
+}
+.song-item .song-description {
+  padding-left: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.song-item .song-description h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.song-item .song-description h4 {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=App.css.map */

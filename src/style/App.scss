@@ -11,7 +11,18 @@ h1{
     justify-content: center;
     align-items: center;
     font-family: 'Protest Guerrilla', sans-serif;
+    padding: 1rem 0 0 0;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    color: rgb(255, 94, 0)
 }
 
 @import "./Player";
 @import "./Songs";
+@import "./SongList";
+@import "./SongListItem";

@@ -1,0 +1,27 @@
+.song-item{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5vw;
+    border-bottom: 3px solid gray;
+    cursor: pointer;
+        &:hover{
+            background: grey;
+        }
+
+    .song-description{
+        padding-left: 0.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h4{
+            font-size: 0.8rem;
+        }
+    }
+}

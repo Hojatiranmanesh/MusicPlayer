@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+.Songs-List{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgb(228,226,226);
+    box-shadow: 2px 2px 50px rgb(24, 24, 24);
+    overflow: scroll;
+    font-family: 'Protest Riot', sans-serif;
+
+    h2{
+        padding: 1vw;
+        text-align: center;        
+    }
+
+    .song-list-items{
+        display: flex;
+        flex-direction: column;
+        padding: 4vh 1vw;
+        align-items: center;
+        img{
+            width: 30%;
+        }
+    }
+}
