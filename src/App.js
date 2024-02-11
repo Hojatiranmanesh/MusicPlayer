@@ -9,7 +9,7 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="App">
-      <h1>Music Player</h1>
+      <h1>HOJJAT'S Music Player</h1>
       <Songs currentSong={currentSong}/>
       <Player currentSong={currentSong} isPlaying={isPlaying} setIsPlaying={setIsPlaying}/>
     </div>
