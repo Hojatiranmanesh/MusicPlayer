@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <h1>HOJJAT'S Music Player</h1>
       <Songs currentSong={currentSong}/>
-      <Player currentSong={currentSong} isPlaying={isPlaying} setIsPlaying={setIsPlaying}/>
+      <Player currentSong={currentSong} isPlaying={isPlaying} setIsPlaying={setIsPlaying} songs={songs} setCurrentSong={setCurrentSong}/>
       <SongsList songs={songs} setCurrentSong={setCurrentSong}/>
       <h5>created by HOJJAT IRANMANESH</h5>
     </div>

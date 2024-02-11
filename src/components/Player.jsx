@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
 
-const Player = ({currentSong, isPlaying, setIsPlaying}) => {
+const Player = ({currentSong, isPlaying, setIsPlaying ,songs,setCurrentSong}) => {
 
     const audioRef = useRef(null);
     const handlePlaySong = () => {
@@ -41,6 +41,24 @@ const Player = ({currentSong, isPlaying, setIsPlaying}) => {
         audioRef.current.currentTime = e.target.value;
         setSongInfo({...songInfo, currentTime: e.target.value});
     } 
+
+    const skipSongs = (dir) =>{
+        const indexCurrent = songs.findIndex((item)=> item.id === currentSong.id);
+        if(dir === "next"){
+            if(indexCurrent === songs.length-1){
+                setCurrentSong(songs[0]); 
+            }else{
+                setCurrentSong(songs[indexCurrent + 1]);
+            }
+        }
+        if(dir === "back"){
+            if(indexCurrent === 0){
+                setCurrentSong(songs[songs.length - 1]); 
+            }else{
+                setCurrentSong(songs[indexCurrent -1 ]);
+            }
+        }
+    }
     return(
         <div className="player">
             <div className="time-control">
@@ -49,9 +67,9 @@ const Player = ({currentSong, isPlaying, setIsPlaying}) => {
                 <p>{TimeFormat(songInfo.duration)}</p>
             </div>
             <div className="play-control">
-                <FontAwesomeIcon className="skip-back" icon={faAngleLeft} />
+                <FontAwesomeIcon onClick={()=> skipSongs("back")} className="skip-back" icon={faAngleLeft} />
                 <FontAwesomeIcon onClick={handlePlaySong} className="play" icon={isPlaying ? faPause : faPlay} />
-                <FontAwesomeIcon className="skip-forward" icon={faAngleRight} />
+                <FontAwesomeIcon onClick={()=> skipSongs("next")} className="skip-forward" icon={faAngleRight} />
             </div>
             <audio onLoadedMetadata={timeUpdateHandle} onTimeUpdate={timeUpdateHandle} ref= {audioRef} src={currentSong.audio}></audio>
         </div>
